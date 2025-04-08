@@ -1,0 +1,46 @@
+/* Define variables */
+:root {
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%)
+    --paragraph-font-size: 0.938rem;
+    --black: hsl(0, 0%, 0%);
+}
+
+/* Font import */
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+    font-weight: 800;
+    font-display: swap;
+}
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--off-white);
+    font-family: 'Inter-Regular', sans-serif;
+    color: var(--grayish-blue);
+}
