@@ -43,4 +43,68 @@ body {
     background-color: var(--off-white);
     font-family: 'Inter-Regular', sans-serif;
     color: var(--grayish-blue);
+    line-height: 1.6;
 }
+
+.container {
+    max-width: 100%;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.nav-links {
+    display: none;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--soft-red);
+    cursor:grab;
+}
+
+.fa {
+    color: var(--black);
+    font-size: 3rem;
+}
+
+
+
+@media screen and (min-width: 375px) {
+    .container {
+        margin: 1rem 8rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .icon {
+        display: none;
+    }
+
+}
+
+
+
