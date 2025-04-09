@@ -5,9 +5,10 @@
     --off-white: hsl(36, 100%, 99%);
     --grayish-blue: hsl(233, 8%, 79%);
     --dark-grayish-blue: hsl(236, 13%, 42%);
-    --very-dark-blue: hsl(240, 100%, 5%)
-    --paragraph-font-size: 0.938rem;
+    --very-dark-blue: hsl(240, 100%, 5%);
+    --paragraph-font-size: 0.8rem;
     --black: hsl(0, 0%, 0%);
+    --silver: 	hsl(233, 8%, 79%);
 }
 
 /* Font import */
@@ -81,6 +82,15 @@ body {
     font-size: 3rem;
 }
 
+/* Feature section */
+.featured-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+
 
 /* Numbered articles*/
 .numbered-articles {
@@ -105,15 +115,17 @@ body {
 }
 
 .article-content .number{
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--silver);
 }
 
 .article-content h3 {
-    color: var(--black);
+    color: var(--very-dark-blue);
     margin-bottom: 0.3rem;
-    font-weight: 800;
-    font-size: 0.8rem;
+    /* font-weight: 800; */
+    font-family: "Inter-Bold";
+    font-size: 0.9rem;
 }
 
 .article-content h3:hover {
@@ -122,7 +134,8 @@ body {
 }
 
 .article-content p {
-    font-size: 0.8rem;
+    font-size: var(--paragraph-font-size);
+    color: var(--black);
 }
 
 
