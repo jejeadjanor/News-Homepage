@@ -64,10 +64,6 @@ body {
     margin-bottom: 2rem;
 }
 
-/* .nav-links {
-    display: none;
-} */
-
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -85,8 +81,9 @@ body {
     cursor:pointer;
 }
 
-.icon {
+.menu-button {
     display: none;
+    cursor: pointer;
 }
 
 .fa {
@@ -257,6 +254,7 @@ hr{
         padding: 1rem;
         margin: 1rem;
     }
+
     .featured-section {
         grid-template-columns: 1fr;
     }
@@ -292,7 +290,6 @@ hr{
 @media (max-width: 576){
     .container {
         padding: 1rem;
-        margin: 1rem;
     }
 
     .featured-content h2{
