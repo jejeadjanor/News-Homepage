@@ -171,6 +171,7 @@ body {
 
 .sidebar h2 {
     color: var(--soft-orange);
+    font-family: 'Inter-Bold';
     font-size: 2rem;
     margin-bottom: 1rem;
 }
