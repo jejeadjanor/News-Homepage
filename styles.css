@@ -6,7 +6,8 @@
     --grayish-blue: hsl(233, 8%, 79%);
     --dark-grayish-blue: hsl(236, 13%, 42%);
     --very-dark-blue: hsl(240, 100%, 5%);
-    --paragraph-font-size: 0.8em;
+    --paragraph-font-size-mobile: 0.938rem;
+    --paragraph-font-size-desktop: 0.8rem;
     --black: hsl(0, 0%, 0%);
     --silver:hsl(233, 8%, 79%);
     --gun-metal: hsl(236, 13%, 42%);
@@ -74,6 +75,7 @@ body {
     text-decoration: none;
     color: var(--dark-grayish-blue);
     transition: color 0.3s ease;
+    font-size: var(--paragraph-font-size-desktop);
 }
 
 .nav-links a:hover {
@@ -138,7 +140,7 @@ body {
 }
 
 .featured-text p {
-    font-size: var(--paragraph-font-size);
+    font-size: var(--paragraph-font-size-desktop);
     color: var(--gun-metal);
 }
 
@@ -146,7 +148,8 @@ body {
     background-color: var(--soft-red);
     color: var(--off-white);
     border: none;
-    padding: 0.8rem 2rem;
+    padding: 0.9rem 3rem;
+    font-size: 0.875rem;
     font-weight: 700;
     left: 0.3rem;
     cursor: pointer;
@@ -172,20 +175,21 @@ body {
     margin-bottom: 1rem;
 }
 
-.sidebar-article h4{
+.sidebar-article h3{
     color: var(--off-white);
-    font-family: 'Inter-Bold';
+    font-family: 'Inter-ExtraBold';
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
-.sidebar-article h4:hover{
+.sidebar-article h3:hover{
     color: var(--soft-orange);
     cursor: pointer;
 }
 
 .sidebar-article p {
     margin-bottom: 2rem;
-    font-size: 0.75rem;
+    font-size: var(--paragraph-font-size-desktop);
 }
 
 hr{
@@ -235,7 +239,7 @@ hr{
 }
 
 .article-content p {
-    font-size: var(--paragraph-font-size);
+    font-size: var(--paragraph-font-size-desktop);
     color: var(--gun-metal);
 }
 
@@ -268,9 +272,27 @@ hr{
         font-size: 2.5rem;
    }  
 
+   .featured-text p {
+    font-size: var(--paragraph-font-size-mobile);
+    }
+
+    .sidebar-article p {
+        margin-bottom: 2rem;
+        font-size: var(--paragraph-font-size-mobile);
+    }
+
     .numbered-articles {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .article-content h3 {
+        font-family: "Inter-ExtraBold";
+        font-size: 0.9rem;
+    }
+
+    .article-content p {
+        font-size: 0.8rem;
     }
 
     .menu-button {
@@ -308,7 +330,7 @@ hr{
         width: 30px;
         .fa {
             color: var(--dark-grayish-blue);
-            font-size: 1.5rem;
+            font-size: 2.15rem;
         }
     }
 
@@ -321,6 +343,18 @@ hr{
 
     .featured-content h2{
         font-size: 2rem;
+    }
+
+    .featured-text p {
+        font-size: var(--paragraph-font-size-mobile);
+    }
+
+    .sidebar-article p {
+        font-size: var(--paragraph-font-size-mobile);
+    }
+
+    .article-content p {
+        font-size: var(--paragraph-font-size-mobile);
     }
 }
 
